@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors </title>
+   
+<link rel="stylesheet" href="styles/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik+Gemstones&family=Rubik+Puddles&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik+Gemstones&family=Rubik+Puddles&family=Slackey&display=swap" rel="stylesheet">
+    </head>
+  <body>
+
+
+<div style="text-align: center;">
+<p class="title"><span style="color: red;">Rock </span> <span style="color: violet;;">Paper </span><span style="color: yellow;"> Scissors</span> </p>
+</div>
+
+<div class="teclas">
+  <p><span class="tecla-r">R</span><span class="tecla-p">P</span><span class="tecla-s">S</span></p>
+</div>
+
+<div style="display: flex; justify-content: center;">
+  <button class ="move-button js-rock-button"><img src = "images/rock-emoji.png" class="move-icon"></button>
+  <button class ="move-button js-paper-button"><img src="images/paper-emoji.png" class="move-icon"></button>
+  <button class ="move-button js-scissors-button"><img src ="images/scissors-emoji.png" class="move-icon"></button>
+ </div>
+
+<p class="js-result result"></p>
+<p class ="js-move"></p>
+<p class ="js-score"></p>
+  
+
+  <p class="js-confirmation"></p>
+<div style="display: flex; justify-content: center;">
+
+  <div class="reset-grid">
+    <button class="score-button js-score-button">RESET SCORE</button>
+    <p class="tecla-backspace">backspace</p>
+  </div>
+
+  <div class="auto-play-grid">
+    <button class="auto-play-button js-auto-button">AUTO PLAY</button>
+    <p class="tecla-a">A</p>
+  </div>
+</div>
+
+<script src="scripts/rock-paper-scissors.js"></script>
+
+  </body>
+
+</html>

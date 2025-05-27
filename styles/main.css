@@ -1,0 +1,204 @@
+body{
+
+  background-color: black;
+  color: white;
+  font-family: arial;
+}
+
+.title{
+  color:rgb(241, 240, 239);
+  font-family: "Rubik Gemstones", system-ui;
+  font-size:50px;
+  font-weight: bold;
+
+}
+
+.move-icon{
+
+height: 50px;
+
+}
+
+.move-button{
+
+  background-color:   transparent;
+  border: 3px dotted white;
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 10px;
+  cursor:pointer;
+  transition: background-color 0.4s;
+}
+
+.js-rock-button:hover{
+  background-color: rgba(252, 114, 102, 0.682); 
+}
+
+
+.js-paper-button:hover{
+  background-color: rgba(238, 130, 238, 0.682);
+}
+
+.js-scissors-button:hover{
+  background-color: rgba(255, 255, 0, 0.682);
+}
+
+.result{
+display: flex;
+font-size: 50px;
+font-weight: bold;
+margin-top: 50px;
+justify-content: center;
+font-family: "Rubik Puddles", system-ui;
+}
+
+
+.js-score{
+display: flex;
+margin-top: 60px;
+margin-bottom: 60px;
+justify-content: center;
+font-family: "Slackey", sans-serif;
+
+
+}
+
+.score-button, .auto-play-button{
+padding:10px 15px;
+margin: 5px;
+background-color: red;
+border: none;
+font-size: 15px;
+cursor: pointer;
+border-radius: 6px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+font-family: "Slackey", sans-serif;
+
+transition: background-color 0.5s, color 0.2s;
+}
+
+.auto-play-button{
+  background-color: blue;
+  color: white;
+}
+
+.score-button:hover, .auto-play-button:hover{
+
+  background-color: rgb(158, 152, 152);
+  color:bisque;
+}
+
+.teclas{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.teclas span{
+
+  border-style: solid;
+  padding: 5px 9px 5px 9px;
+  border-width: 2px;
+}
+
+.tecla-r{
+  margin-left:  -33px;
+  margin-right: 110px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.416);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+
+.tecla-p{
+  margin-right: 112px;
+  margin-left: -2px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.416);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.tecla-s{
+  margin-right: -30px;
+  margin-left: -5px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.416);
+  border-radius: 2px;
+  opacity: 0;
+  transition: opacity 0.5s;
+
+}
+
+.js-move{
+  display: flex;
+  align-items:end;
+  justify-content: center;
+    font-family: "Slackey", sans-serif;
+}
+
+.js-confirmation{
+  display: flex;
+  justify-content: center;
+  font-family: "Slackey", sans-serif;
+  align-items: center;
+}
+
+.js-confirmation button{
+    font-family: "Slackey", sans-serif;
+    margin: 5px;
+    background-color: white;
+    padding: 5px 8px 5px 8px;
+    transition: background-color 0.5s, color 0.2s;
+    cursor: pointer;
+}
+
+.js-confirmation button:hover{
+
+  background-color: rgb(158, 152, 152);
+  color:bisque;
+
+}
+
+.auto-play-grid .reset-grid{
+  display: grid;
+  grid-template-rows: 60px;
+ justify-content: center;
+  
+}
+
+.tecla-a{
+  text-align: center;
+  border-style: solid;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.416);
+  border-radius: 2px;
+  opacity: 1;
+ width: 20px;
+ padding: 5px;
+ margin-left: 50px;
+ opacity: 0;
+
+  transition: opacity 0.5s;
+}
+
+.tecla-backspace{
+    text-align: center;
+  border-style: solid;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.416);
+  border-radius: 2px;
+  opacity: 1;
+ width: 100px;
+ padding: 5px;
+ margin-left: 25px;
+ opacity: 0;
+
+  transition: opacity 0.5s;
+}
