@@ -82,6 +82,7 @@ transition: background-color 0.5s, color 0.2s;
 .auto-play-button{
   background-color: blue;
   color: white;
+  min-width: 140;
 }
 
 .score-button:hover, .auto-play-button:hover{

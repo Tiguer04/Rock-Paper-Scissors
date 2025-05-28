@@ -38,6 +38,8 @@ document.querySelector('.js-score-button').addEventListener('click', () =>{
 
     document.querySelector('.js-confirmation').innerHTML =''
 
+    document.querySelector('.js-move').innerHTML=''
+
 })
 
   document.querySelector('.no-button').addEventListener('click', () =>{
@@ -56,12 +58,13 @@ let intervalId;
 function autoPlay(){
 
   autoButton = document.querySelector('.js-auto-button');
-  
+  autoButton.style.width = '129px'
 
   
 if (!isAutoPlaying){
 
   autoButton.innerHTML = 'STOP'
+  
  intervalId = setInterval(() => {
   
     const playerMove = pickComputerMove();
@@ -135,6 +138,7 @@ document.querySelector('.js-confirmation').innerHTML = `
     Uscore();
 
     document.querySelector('.js-confirmation').innerHTML = '';
+    document.querySelector('.js-move').innerHTML=''
 
   })
 
@@ -302,11 +306,6 @@ document.querySelector('.js-auto-button').addEventListener('mouseenter', () =>{
 document.querySelector('.js-auto-button').addEventListener('mouseleave', () =>{
   teclaA.style.opacity = '0';
 })
-
-if (!document.querySelector('.js-auto-button').innerHTML === 'STOP'){
-
-}
-
 
 document.querySelector('.js-score-button').addEventListener('mouseenter', () =>{
   teclaBackspace.style.opacity = '1';
