@@ -10,9 +10,9 @@
 ##### 🤖 "AUTOPLAY" 🡆 This is the difference. If you want to watch a "PC vs. PC" match, simply click this button or press `A` on your keyboard to activate this feature.
 
 ### 🟢**How it works**
-#### When you start the game, clicking `Rock`, `Paper` or `Scissors`, inmediatly the "PC" choose one of these options.
+#### When you start the game, clicking `Rock`, `Paper` or `Scissors` (or pressing "R", "P" or "S"), inmediatly the "PC" choose one of these options.
 #### Then the program compares your election with `PC's option`.
-#### ▷ If you have selected an option that beats `PC's option`, you win.
-#### ▷ If you selected an option that doesn't beat the `PC's option`, but also doesn't lose compared to it, then it's a tie.
-#### ▷If you have selected an option that is beated by `PC's option`, you lose.
+#### 🡆 If you have selected an option that beats `PC's option`, you win.
+#### 🡆 If you selected an option that doesn't beat the `PC's option`, but also doesn't lose compared to it, then it's a tie.
+#### 🡆 If you have selected an option that is beated by `PC's option`, you lose.
 
