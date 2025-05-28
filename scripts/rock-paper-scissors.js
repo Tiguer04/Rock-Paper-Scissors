@@ -23,12 +23,21 @@ document.querySelector('.js-auto-button').addEventListener('click', () => {
 
 })
 
+
 document.querySelector('.js-score-button').addEventListener('click', () =>{
+
+if(score.wins === 0 && score.loses === 0 && score.ties === 0){
+    alert('You have not played yet hehe')
+    return;
+}
+
 
 if(isAutoPlaying === true){
    alert('Turn the "Auto Play" button off.')
 } else if (isAutoPlaying === false){
-  document.querySelector('.js-confirmation').innerHTML = `
+
+  if(score.wins !== 0 || score.loses !== 0 || score.ties !== 0){
+     document.querySelector('.js-confirmation').innerHTML = `
   Are you sure you want to reset the score?  
   <button class="yes-button">YES</button>
   <button class="no-button">NO</button>
@@ -55,6 +64,9 @@ if(isAutoPlaying === true){
 
   })
   }
+ 
+  }
+
 })
 
 
@@ -80,7 +92,6 @@ if (!isAutoPlaying){
 
   }, 1000);
   isAutoPlaying = true;
-  
 
 }
 else{
@@ -101,6 +112,7 @@ document.querySelector('.js-rock-button').addEventListener('click', () => {
     alert('Turn the "Auto Play" button off.')
   } else if(isAutoPlaying === false){
     playGame('rock');
+
   }
   
 })
@@ -117,7 +129,8 @@ document.querySelector('.js-scissors-button').addEventListener('click', () =>{
   if(isAutoPlaying === true){
     alert('Turn the "Auto Play" button off.')
   }else if(isAutoPlaying === false){
-    playGame('scissors')
+    playGame('scissors');
+
   }
   
 })
@@ -156,10 +169,18 @@ if (event.key === 'r'){
   autoPlay()
 
 } else if (event.key === 'Backspace'){
+if(score.wins === 0 && score.loses === 0 && score.ties === 0){
+    alert('You have not played yet hehe')
+    return;
+}
+
+
 if(isAutoPlaying === true){
    alert('Turn the "Auto Play" button off.')
 } else if (isAutoPlaying === false){
-  document.querySelector('.js-confirmation').innerHTML = `
+
+  if(score.wins !== 0 || score.loses !== 0 || score.ties !== 0){
+     document.querySelector('.js-confirmation').innerHTML = `
   Are you sure you want to reset the score?  
   <button class="yes-button">YES</button>
   <button class="no-button">NO</button>
@@ -185,7 +206,9 @@ if(isAutoPlaying === true){
     document.querySelector('.js-confirmation').innerHTML =''
 
   })
-}
+  }
+ 
+  }
 }
 })
 
