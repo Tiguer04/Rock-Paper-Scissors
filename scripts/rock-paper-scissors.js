@@ -18,14 +18,21 @@ score = {
 */
 
 document.querySelector('.js-auto-button').addEventListener('click', () => {
+  
   autoPlay();
 
 })
 
 document.querySelector('.js-score-button').addEventListener('click', () =>{
 
-  document.querySelector('.js-confirmation').innerHTML = `Are you sure you want to reset the score 
-  <button class ="yes-button">YES</button> <button class = "no-button">NO</button>`
+if(isAutoPlaying === true){
+   alert('Turn the "Auto Play" button off.')
+} else if (isAutoPlaying === false){
+  document.querySelector('.js-confirmation').innerHTML = `
+  Are you sure you want to reset the score?  
+  <button class="yes-button">YES</button>
+  <button class="no-button">NO</button>
+`;
 
   document.querySelector('.yes-button').addEventListener('click', () =>{
     score.loses = 0;
@@ -36,20 +43,19 @@ document.querySelector('.js-score-button').addEventListener('click', () =>{
     
     Uscore();
 
-    document.querySelector('.js-confirmation').innerHTML =''
-
+    document.querySelector('.js-confirmation').innerHTML = '';
     document.querySelector('.js-move').innerHTML=''
 
-})
+  })
 
+  
   document.querySelector('.no-button').addEventListener('click', () =>{
 
     document.querySelector('.js-confirmation').innerHTML =''
 
   })
-
+  }
 })
-
 
 
 let isAutoPlaying = false;
@@ -91,38 +97,69 @@ isAutoPlaying = false;
 
 
 document.querySelector('.js-rock-button').addEventListener('click', () => {
-  playGame('rock');
+  if(isAutoPlaying === true){
+    alert('Turn the "Auto Play" button off.')
+  } else if(isAutoPlaying === false){
+    playGame('rock');
+  }
+  
 })
 
 document.querySelector('.js-paper-button').addEventListener('click', () =>{
-  playGame('paper');
-})
+  if(isAutoPlaying === true){
+    alert('Turn the "Auto Play" button off.')
+  } else if (isAutoPlaying === false){
+    playGame('paper');
+  }
+  })
 
 document.querySelector('.js-scissors-button').addEventListener('click', () =>{
-  playGame('scissors')
+  if(isAutoPlaying === true){
+    alert('Turn the "Auto Play" button off.')
+  }else if(isAutoPlaying === false){
+    playGame('scissors')
+  }
+  
 })
 
 document.body.addEventListener('keydown', (event) =>{
 
 if (event.key === 'r'){
 
-  playGame('rock');
+  if(isAutoPlaying === true){
+    alert('Turn the "Auto Play" button off.')
+  } else if(isAutoPlaying === false){
+    playGame('rock');
+  }
+
 
 } else if (event.key === 'p' ){
 
-playGame('paper');
+  if(isAutoPlaying === true){
+    alert('Turn the "Auto Play" button off.')
+  } else if (isAutoPlaying === false){
+    playGame('paper');
+  }
+
 
 } else if (event.key === 's'){
 
-playGame('scissors')
+  if(isAutoPlaying === true){
+    alert('Turn the "Auto Play" button off.')
+  }else if(isAutoPlaying === false){
+    playGame('scissors')
+  }
+
 
 } else if (event.key === 'a'){
 
   autoPlay()
 
 } else if (event.key === 'Backspace'){
-
-document.querySelector('.js-confirmation').innerHTML = `
+if(isAutoPlaying === true){
+   alert('Turn the "Auto Play" button off.')
+} else if (isAutoPlaying === false){
+  document.querySelector('.js-confirmation').innerHTML = `
   Are you sure you want to reset the score?  
   <button class="yes-button">YES</button>
   <button class="no-button">NO</button>
@@ -148,10 +185,8 @@ document.querySelector('.js-confirmation').innerHTML = `
     document.querySelector('.js-confirmation').innerHTML =''
 
   })
-
-
 }
-
+}
 })
 
 
