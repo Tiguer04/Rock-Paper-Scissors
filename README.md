@@ -16,3 +16,5 @@
 #### 🡆 If you selected an option that doesn't beat the `PC's option`, but also doesn't lose compared to it, then it's a tie.
 #### 🡆 If you have selected an option that is beated by `PC's option`, you lose.
 
+### *All of these rounds will be saved in the Local Storage, until you click "RESET SCORE"*
+
